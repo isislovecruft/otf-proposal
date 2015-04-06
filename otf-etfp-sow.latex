@@ -70,11 +70,9 @@
 %placed here. General acknowledgments should be placed at the end of the article.}
 }
 \subtitle{Statement of Work}
-
 %\titlerunning{Short form of title}        % if too long for running head
 
 \author{Isis Lovecruft}
-
 %\authorrunning{Short form of author list} % if too long for running head
 
 \institute{Isis Lovecruft \\
@@ -119,7 +117,7 @@ materials, Exhibit A. \cite{ExhibitA}
 inception, BridgeDB has consistently held a number of bridges between half and
 two-thirds the number of total relays in the Tor network, with its databases
 currently holding over 4,000 bridges relays \cite{Ref1} and over 12,000
-Pluggable-Transport—enabled bridges for distribution to users in censored
+Pluggable-Transport bridges for distribution to users in censored
 regions. There are approximately 12,000 to 15,000 Tor bridge users per day,
 using bridges which BridgeDB has distributed. (Please see additional Reference
 materials \cite{Ref2} and \cite{Ref3}.)
@@ -131,6 +129,22 @@ emails per day, replies to users with help and configuration assistance
 350,000 times per day, and emails Tor bridges to users roughly 50,000 times
 per day. All of BridgeDB's user interfaces are translated and localised into
 45 different languages and dialects.
+
+\subsection{Background Information for Primary Developer}
+\label{cv}
+
+\paragraph{} The technical lead for this project will be Isis Lovecruft. Isis has been
+a developer for The Tor Project for the past five years. The first two years were spent
+working on the Open Observatory of Network Interference (OONI), a platform
+for a global censorship detection system, as well as tools for the OONI platform which
+detect various types of network anomalies and censorship events.
+
+After developing OONI, Isis spent the next three years as the Lead Developer and Maintainer
+of BridgeDB, however, due to lack of funding, much of this time was volunteered. At the
+same time, Isis also worked for the LEAP Encryption Access Project (LEAP), developing
+a transparently encrypting remailer in an effort to provide better communications security.
+Isis has volunteered for, and contributed to, several other projects, including Open
+Whispersystems, Briar Project, Tahoe-LAFS, and others.
 
 \subsection{Terminology}
 \label{terminology}
@@ -161,7 +175,7 @@ above all other improvements.
 
 \paragraph{} Additionally, The Fellow shall, at all times, strive to make BridgeDB and
 other codebases concerning Tor Bridge Distribution as maintainable,
-comprehendable, and easily extensible as possible.
+comprehensible, and easily extensible as possible.
 
 \section{Statement of Work (SOW)}
 \label{sow}
@@ -173,7 +187,7 @@ comprehendable, and easily extensible as possible.
 The ETFP Fellow shall undertake the following Tasks within the duration of the
 Fellowship:
 
-\leftskip=20pt
+\leftskip=0pt
 \paragraph{SOW.1.}
         The Fellow shall migrate BridgeDB's cluster of servers to a new host
         machine. This new host has already been graciously donated to The Tor
@@ -197,26 +211,26 @@ Fellowship:
         The Fellow shall implement scalability improvements to Tor Bridge
         Distribution backend infrastructure, including but not limited to:
 
-        \leftskip=40pt
+        \leftskip=20pt
         \paragraph{SOW.3.1.} 
                   Migration of BridgeDB's databases to a distributed,
                   asynchronous database system and add support for using a
                   caching key-value store (see additional Reference materials,
                   Exhibit X, for further details regarding proposed
                   implementation, and see also \cite{Ref9} \cite{Ref10}
-                  \cite{Ref11} ), and,
+                  \cite{Ref11}), and,
 
         \paragraph{SOW.3.2.} 
                  Improvements to sections of the core Tor codebase which
                  determine the behaviours of the Directory Authorities and
                  Bridge Authority, when necessary.
 
-\leftskip=20pt
+\leftskip=0pt
 \paragraph{SOW.4.}
         The Fellow shall provide continued maintenance of infrastructure
         related to Tor Bridge Distribution, including but not limited to:
 
-		\leftskip=40pt
+		\leftskip=20pt
         \paragraph{SOW.4.1.}
                  Systems administration maintenance and supervision regarding
                  production systems used by The Tor Project, Inc., for Tor
@@ -230,7 +244,7 @@ Fellowship:
                  for underlying software infrastructure required for
                  maintaining said systems.
                  
-\leftskip=20pt
+\leftskip=0pt
 \paragraph{SOW.5.}
         The Fellow shall continue to publicly interface with the general Tor
         volunteer community to review submitted patches, and shall provide
@@ -267,21 +281,21 @@ Fellowship:
         Reference materials \cite{Ref13}, although additional tasks are likely to
         arise.)
         
-\leftskip=20pt
+\leftskip=0pt
 \paragraph{SOW.9.}
         The Fellow shall research potential future improvements concerning Tor
         Bridge Distribution, and shall publicly report on these research
         efforts and their proposed implementations.
         
-        \leftskip=40pt
+        \leftskip=20pt
         \paragraph{SOW.9.1}
                 The Fellow shall research the feasibility and implementation
                 difficultly of creating a new TBB Firefox extension to
-                automatedly distribute bridges to clients who have few
+                automatically distribute bridges to clients who have few
                 remaining reachable or functional bridges remaining in their
                 Tor configuration file.
         
-                \leftskip=60pt
+                \leftskip=40pt
                 \paragraph{SOW.9.1.2}
                           The Fellow shall research, design, and document a
                           proposed implementation of an Inter-Process
@@ -290,13 +304,13 @@ Fellowship:
                           Exhibit Y, \cite{ExhibitY} for a Work Breakdown Structure (WBS)
                           diagram of the systems components involved.)
                           
-\leftskip=20pt
+\leftskip=0pt
 \paragraph{SOW.10.}
-         The Fellow shall research the implementation difficulty costs
+         The Fellow shall research the implementation difficulty and costs
          associated with implementing a modified version of the "Social
          Distributor" defined in the rBridge paper. (See additional Reference
          materials, Exhibit Z, \cite{ExhibitZ} for the rBridge paper, and additional Reference
-         materials \cite{Ref14} for a ticket discussion previous, not-yet-complete,
+         materials \cite{Ref14} for a ticket discussing previous, not-yet-complete,
          research.)
          
 \paragraph{} 
@@ -305,12 +319,12 @@ Fellowship:
          measurements of a user's "good behaviour" (i.e. the user's bridges
          have not been blocked by a censoring party), as well as invite
          tokens, to create a highly censorship-resistant Tor Bridge
-         distribution mechanism, wherein censoring parties and their sybils
+         distribution mechanism, wherein censoring parties and their sibyls
          are "locked out" of the system and unable to obtain bridges. The
          results of this research shall be publicly documented as an
          implementation proposal.
          
-         \leftskip=40pt
+         \leftskip=20pt
          \paragraph{SOW.10.1.}
                    The Fellow shall investigate the current implementation
                    feasibility, and server-side efficiency, of the underlying
@@ -320,7 +334,7 @@ Fellowship:
                    oblivious transfer. (See additional Reference materials
                    \cite{Ref15})
                    
-                   \leftskip=60pt
+                   \leftskip=40pt
                    \paragraph{SOW.10.1.1.}
                                The Fellow shall investigate the reusability of
                                any previously-published implementations of
@@ -340,14 +354,14 @@ Fellowship:
                                evaluate their ramifications for security,
                                privacy, and anonymity.
                                
-         \leftskip=40pt
+         \leftskip=20pt
          \paragraph{SOW.10.2.}
                    The Fellow shall investigate the feasibility of
                    implementing the client-side portion of the codebase for
                    the "Social Distributor" on top of the TBB Firefox
                    extension defined in SOW.9.1.
                    
-                   \leftskip=60pt
+                   \leftskip=40pt
                    \paragraph{SOW.10.2.1.}
                                The Fellow shall consult with the TBB
                                development team to arrive at a design that is
@@ -370,8 +384,8 @@ the approval of all parties.
 \subsubsection{Payment}
 \label{payment}
 \paragraph{} Provided that the Tasks and Deliverables defined in this SOW meet the
-Acceptance Criteria defined in \ref{acceptance}, and The Fellow continually meets the
-provisions for Monitoring defined in §3.4, OTF will provide The Fellow with a
+Acceptance Criteria defined in §\ref{acceptance}, and The Fellow continually meets the
+provisions for Monitoring defined in §\ref{monitoring}, OTF will provide The Fellow with a
 monthly stipend of \$4,200 USD, for a period up to twelve (12) months, for a
 total sum of no more than \$50,400 USD.
 
@@ -384,7 +398,7 @@ when both parties (i.e. OTF and The Fellow) have established a Contract and
 agreed to any required Terms and Conditions.
 \paragraph{} The Tasks defined in this SOW have been given in an estimated chronological
 order, such that Tasks assigned a lower SOW number are to be completed prior
-to Taks which have been assigned a higher number. Tasks comprised mostly of
+to tasks which have been assigned a higher number. Tasks comprised mostly of
 research, namely SOW.8-10, may be completed by The Fellow at any time
 throughout the duration of The ETFP Fellowship.
 
@@ -400,7 +414,7 @@ herein to any other party without the explicit written permission of OTF.
 \label{location}
 \paragraph{} The Fellow is unrestricted concerning the location of work, provided that The
 Fellow is reasonably capable of efficiently and productively communicating
-with OTF and other collegues, including collegues at The Tor Project, Inc.,
+with OTF and other colleagues, including colleagues at The Tor Project, Inc.,
 and other institutions and organisations with experts concerned with the
 surrounding subject matter.
 
@@ -415,7 +429,7 @@ completes the Tasks as defined in the SOW within.
 \paragraph{} The Fellow shall create monthly status reports, which shall be sent to both
 OTF's and The Tor Project's mailing lists. The Fellow shall, when necessary
 for either collaboration or reporting, schedule, organise, and conduct online
-meetings, in open public channels, with collegues to ensure that progress is
+meetings, in open public channels, with colleagues to ensure that progress is
 made in a satisfactory and timely manner. The Fellow will request regular code
 reviews and shall carefully consider the recommendations of the reviewers.
 
@@ -526,8 +540,8 @@ Wang, Q., Lin, Z., Borisov, N., \& Hopper, N. (2013). rBridge: User Reputation b
 
 \end{thebibliography}
 
-\section{Notes}
-\label{notes}
-Areas of clarification, amplification, other information shall be placed here.
+%\section{Notes}
+%\label{notes}
+%Areas of clarification, amplification, other information shall be placed here.
 
 \end{document}
