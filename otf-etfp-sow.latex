@@ -46,6 +46,9 @@
 %
 % \smartqed  % flush right qed marks, e.g. at end of proof
 %
+
+\journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
+
 \usepackage{graphicx}
 \usepackage{hyperref}
 %\newcommand{\subparagraph}{}
