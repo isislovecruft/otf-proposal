@@ -1,0 +1,533 @@
+%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is a general template file for the LaTeX package SVJour3
+% for Springer journals.          Springer Heidelberg 2010/09/16
+%
+% Copy it to a new file with a new name and use it as the basis
+% for your article. Delete % signs as needed.
+%
+% This template includes a few options for different layouts and
+% content for various journals. Please consult a previous issue of
+% your journal as needed.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% First comes an example EPS file -- just ignore it and
+% proceed on the \documentclass line
+% your LaTeX will extract the file if required
+
+% \begin{filecontents*}{example.eps}
+% %!PS-Adobe-3.0 EPSF-3.0
+% %%BoundingBox: 19 19 221 221
+% %%CreationDate: Mon Sep 29 1997
+% %%Creator: programmed by hand (JK)
+% %%EndComments
+% gsave
+% newpath
+%   20 20 moveto
+%   20 220 lineto
+%   220 220 lineto
+%   220 20 lineto
+% closepath
+% 2 setlinewidth
+% gsave
+%   .4 setgray fill
+% grestore
+% stroke
+% grestore
+% \end{filecontents*}
+
+\RequirePackage{fix-cm}
+%
+%\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+% \smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\newcommand{\subparagraph}{}
+%\usepackage{titlesec}
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
+\begin{document}
+
+\title{Tor Bridge Distribution%\thanks{Grants or other notes
+%about the article that should go on the front page should be
+%placed here. General acknowledgments should be placed at the end of the article.}
+}
+\subtitle{Statement of Work}
+
+%\titlerunning{Short form of title}        % if too long for running head
+
+\author{Isis Lovecruft}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Isis Lovecruft \\
+              Lead Developer \at
+              The Tor Project, Inc. \\
+              \email{isis@torproject.org}
+%           \and
+%           S. Author \at
+%             second address
+}
+
+% \date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+\maketitle
+
+%\begin{abstract}
+%Insert your abstract here. Include keywords, PACS and mathematical
+%subject classification numbers as needed.
+%\keywords{First keyword \and Second keyword \and More}
+%% \PACS{PACS code1 \and PACS code2 \and more}
+%% \subclass{MSC code1 \and MSC code2 \and more}
+%\end{abstract}
+
+\section{Tor Bridge Distribution}
+\label{intro}
+
+\paragraph{} Tor Bridge Distribution includes the maintenance of critical infrastructural
+systems such as BridgeDB, while also working to improve the robustness,
+scalability, and maintainability of those systems. It also includes the
+development of more secure and user-friendly mechanisms for bridge
+distribution. Without this essential work, much of the Tor Projects' efforts
+in the area of censorship circumvention would be unusable.
+
+\subsection{Background}
+\label{background}
+
+\paragraph{} For additional background information, please see the additional Reference
+materials, Exhibit A. \cite{ExhibitA}
+
+\paragraph{} BridgeDB has been a free and publicly available service since 2006. Since its
+inception, BridgeDB has consistently held a number of bridges between half and
+two-thirds the number of total relays in the Tor network, with its databases
+currently holding over 4,000 bridges relays \cite{Ref1} and over 12,000
+Pluggable-Transport—enabled bridges for distribution to users in censored
+regions. There are approximately 12,000 to 15,000 Tor bridge users per day,
+using bridges which BridgeDB has distributed. (Please see additional Reference
+materials \cite{Ref2} and \cite{Ref3}.)
+
+\paragraph{} BridgeDB's website (see additional Reference material \cite{Ref4}) sees 4.5 million
+initial page hits per day, and hands out Tor bridges over HTTPS to users
+roughly 75,000 times per day. BridgeDB's email autoresponder receives 525,000
+emails per day, replies to users with help and configuration assistance
+350,000 times per day, and emails Tor bridges to users roughly 50,000 times
+per day. All of BridgeDB's user interfaces are translated and localised into
+45 different languages and dialects.
+
+\subsection{Terminology}
+\label{terminology}
+
+\paragraph{} Throughout this and the following sections, the grant applicant for the Open
+Technology Fund's (OTF) Emerging Technologies Fellowship Program (ETFP) shall
+be referred to as "The ETFP Fellow" or, simply, "The Fellow". The recipient of
+the goods and/or services provided by The ETFP Fellow will simply be referred
+to as "OTF".
+
+\section{Scope of Work}
+\label{scope}
+
+\paragraph{} The Fellowship's Scope of Work shall consists of a full-time effort to:
+\begin{itemize}
+\item Maintain BridgeDB and other Tor Bridge Distribution infrastructure,
+\item Mitigate any reported or discovered vulnerabilities within the components of said infrastructure,
+\item Develop improved solutions for distributing Tor Bridges to end-user clients, and
+\item Improve the reliability, scalability, and future maintainability of the underlying systems and their codebases.
+\end{itemize}
+
+\subsection{Objectives}
+\label{objectives}
+
+\paragraph{} The Fellow shall strive to ensure that all code and operational procedures are
+developed with the end-user's security, privacy, and usability prioritised
+above all other improvements.
+
+\paragraph{} Additionally, The Fellow shall, at all times, strive to make BridgeDB and
+other codebases concerning Tor Bridge Distribution as maintainable,
+comprehendable, and easily extensible as possible.
+
+\section{Statement of Work (SOW)}
+\label{sow}
+
+\subsection{Tasks and Deliverables}
+\label{tasks}
+
+\paragraph{} With respect to the maintenance and improvement of Tor Bridge Distribution,
+The ETFP Fellow shall undertake the following Tasks within the duration of the
+Fellowship:
+
+\leftskip=20pt
+\paragraph{SOW.1.}
+        The Fellow shall migrate BridgeDB's cluster of servers to a new host
+        machine. This new host has already been graciously donated to The Tor
+        Project, however, the migration process will require some time and may
+        require some possible development work to complete. This server
+        migration will result in increased server resources, improved uptime,
+        and will enable development of the more resource intensive processes
+        necessary for the future scalability improvements.
+        
+\paragraph{SOW.2.}
+        The Fellow shall refactor legacy sections of BridgeDB's codebase to
+        utilise a new Tor parser library. This library is commonly-maintained
+        by several developers and volunteers at The Tor Project, thus, this
+        initial refactoring will result in a great reduction in future efforts
+        spent maintaining the BridgeDB's codebase, as well as additional speed
+        improvements and increased uptime for the production servers which
+        distribute Tor bridges to clients. (See additional Reference materials
+        \cite{Ref5} \cite{Ref6} \cite{Ref7} \cite{Ref8}.)
+
+\paragraph{SOW.3.}
+        The Fellow shall implement scalability improvements to Tor Bridge
+        Distribution backend infrastructure, including but not limited to:
+
+        \leftskip=40pt
+        \paragraph{SOW.3.1.} 
+                  Migration of BridgeDB's databases to a distributed,
+                  asynchronous database system and add support for using a
+                  caching key-value store (see additional Reference materials,
+                  Exhibit X, for further details regarding proposed
+                  implementation, and see also \cite{Ref9} \cite{Ref10}
+                  \cite{Ref11} ), and,
+
+        \paragraph{SOW.3.2.} 
+                 Improvements to sections of the core Tor codebase which
+                 determine the behaviours of the Directory Authorities and
+                 Bridge Authority, when necessary.
+
+\leftskip=20pt
+\paragraph{SOW.4.}
+        The Fellow shall provide continued maintenance of infrastructure
+        related to Tor Bridge Distribution, including but not limited to:
+
+		\leftskip=40pt
+        \paragraph{SOW.4.1.}
+                 Systems administration maintenance and supervision regarding
+                 production systems used by The Tor Project, Inc., for Tor
+                 Bridge Distribution to end-user clients.
+                 
+        \paragraph{SOW.4.2.}
+                 Timely response and mitigation to any reported or discovered
+                 vulnerabilities within production systems used by The Tor
+                 Project, Inc., for Tor Bridge Distribution to end-user
+                 clients, including code review and vulnerability mitigation
+                 for underlying software infrastructure required for
+                 maintaining said systems.
+                 
+\leftskip=20pt
+\paragraph{SOW.5.}
+        The Fellow shall continue to publicly interface with the general Tor
+        volunteer community to review submitted patches, and shall provide
+        assistance and mentorship to new volunteers interested in contributing
+        to any portions of codebases belonging to The Tor Project, Inc., which
+        concern Tor Bridge Distribution and closely-related systems such as
+        Pluggable Transport development.
+        
+\paragraph{SOW.6.}
+        The Fellow shall create an Application Programming Interface (API) to
+        enable easier and more rapid future developments of additional Tor
+        Bridge Distribution mechanisms (commonly referred to as "Bridge
+        Distributors").
+\paragraph{} This API shall allow Bridge Distributors to be run on production
+        servers separate from the database systems, increasing the security,
+        integrity, and auditability of both the Bridge Distributors and the
+        backend databases. This API shall also provide for easy development of
+        novel Bridge Distributors, for example, such as a Twitter bot which
+        distributes Tor Bridges, or a Tor Browser Bundle (TBB) Firefox
+        extension which automatically retrieves new Tor Bridges for clients
+        after detecting that some threshold of the client's current set of Tor
+        Bridges are not reachable or not functioning correctly. (See
+        additional Reference materials \cite{Ref11} \cite{Ref12}, and SOW.9.1.)
+        
+\paragraph{SOW.7.}
+        The Fellow shall produce additional documentation, both developer- and
+        user-facing, for Tor Bridges, BridgeDB, and various Pluggable
+        Transports, and shall improve the clarity and update existing
+        documentation when necessary.
+        
+\paragraph{SOW.8.}
+        The Fellow shall develop improved User Interfaces (UIs) for
+        interacting with clients to distribute Tor Bridges. (See additional
+        Reference materials \cite{Ref13}, although additional tasks are likely to
+        arise.)
+        
+\leftskip=20pt
+\paragraph{SOW.9.}
+        The Fellow shall research potential future improvements concerning Tor
+        Bridge Distribution, and shall publicly report on these research
+        efforts and their proposed implementations.
+        
+        \leftskip=40pt
+        \paragraph{SOW.9.1}
+                The Fellow shall research the feasibility and implementation
+                difficultly of creating a new TBB Firefox extension to
+                automatedly distribute bridges to clients who have few
+                remaining reachable or functional bridges remaining in their
+                Tor configuration file.
+        
+                \leftskip=60pt
+                \paragraph{SOW.9.1.2}
+                          The Fellow shall research, design, and document a
+                          proposed implementation of an Inter-Process
+                          Communication (IPC) channel between TBB and
+                          BridgeDB. (See additional Reference materials,
+                          Exhibit Y, \cite{ExhibitY} for a Work Breakdown Structure (WBS)
+                          diagram of the systems components involved.)
+                          
+\leftskip=20pt
+\paragraph{SOW.10.}
+         The Fellow shall research the implementation difficulty costs
+         associated with implementing a modified version of the "Social
+         Distributor" defined in the rBridge paper. (See additional Reference
+         materials, Exhibit Z, \cite{ExhibitZ} for the rBridge paper, and additional Reference
+         materials \cite{Ref14} for a ticket discussion previous, not-yet-complete,
+         research.)
+         
+\paragraph{} 
+         This research will stand as the basis for later implementation of an
+         automated, privacy-preserving, Tor Bridge Distributor that uses
+         measurements of a user's "good behaviour" (i.e. the user's bridges
+         have not been blocked by a censoring party), as well as invite
+         tokens, to create a highly censorship-resistant Tor Bridge
+         distribution mechanism, wherein censoring parties and their sybils
+         are "locked out" of the system and unable to obtain bridges. The
+         results of this research shall be publicly documented as an
+         implementation proposal.
+         
+         \leftskip=40pt
+         \paragraph{SOW.10.1.}
+                   The Fellow shall investigate the current implementation
+                   feasibility, and server-side efficiency, of the underlying
+                   cryptographic primitives required by the design of the
+                   "Social Distributor" contained within the rBridge paper,
+                   including, but not limited to, anonymous credentials and
+                   oblivious transfer. (See additional Reference materials
+                   \cite{Ref15})
+                   
+                   \leftskip=60pt
+                   \paragraph{SOW.10.1.1.}
+                               The Fellow shall investigate the reusability of
+                               any previously-published implementations of
+                               these requisite cryptographic primitives.
+                               
+                   \paragraph{SOW.10.1.2.}
+                               The Fellow shall consult with cryptologic
+                               experts concerning the safest implementation
+                               strategy for these primitives, should no
+                               acceptable implementations already exist.
+                               
+                   \paragraph{SOW.10.1.3.}
+                               The Fellow shall consult with cryptologic
+                               experts concerning any modifications made to
+                               the original design of the "Social Distributor"
+                               defined in the rBridge paper in order to
+                               evaluate their ramifications for security,
+                               privacy, and anonymity.
+                               
+         \leftskip=40pt
+         \paragraph{SOW.10.2.}
+                   The Fellow shall investigate the feasibility of
+                   implementing the client-side portion of the codebase for
+                   the "Social Distributor" on top of the TBB Firefox
+                   extension defined in SOW.9.1.
+                   
+                   \leftskip=60pt
+                   \paragraph{SOW.10.2.1.}
+                               The Fellow shall consult with the TBB
+                               development team to arrive at a design that is
+                               satisfactory to the TBB development team.
+\leftskip=0pt
+
+\subsubsection{Acceptance Criteria}
+\label{acceptance}
+
+\paragraph{} Due to The Fellow being the Team Lead for the Tor Bridge component of the
+software and hardware Tor ecosystem, as well as the Lead Developer and Lead
+Maintainer of BridgeDB, the satisfactory acceptance of the efforts and work
+concerning the above Deliverables, and the determination of their completion
+status, shall, to some extent, be under the review and recommendation of The
+Fellow. However, The Fellow shall routinely consult with other Team Leads
+within The Tor Project, Inc., as well as with any Technical Reviewers, etc.,
+at OTF, to assess that the Deliverable are satisfied in a manner which meets
+the approval of all parties.
+
+\subsubsection{Payment}
+\label{payment}
+\paragraph{} Provided that the Tasks and Deliverables defined in this SOW meet the
+Acceptance Criteria defined in \ref{acceptance}, and The Fellow continually meets the
+provisions for Monitoring defined in §3.4, OTF will provide The Fellow with a
+monthly stipend of \$4,200 USD, for a period up to twelve (12) months, for a
+total sum of no more than \$50,400 USD.
+
+\subsection{Schedule}
+\label{schedule}
+\paragraph{} The ETFP Fellowship is defined to endure for a duration of one (1) year. The
+end of The ETFP Fellowship is to be interpreted relative to the start of the
+ETFP Fellowship, where the start of The ETFP Fellowship is defined as the date
+when both parties (i.e. OTF and The Fellow) have established a Contract and
+agreed to any required Terms and Conditions.
+\paragraph{} The Tasks defined in this SOW have been given in an estimated chronological
+order, such that Tasks assigned a lower SOW number are to be completed prior
+to Taks which have been assigned a higher number. Tasks comprised mostly of
+research, namely SOW.8-10, may be completed by The Fellow at any time
+throughout the duration of The ETFP Fellowship.
+
+\subsection{Assumptions}
+\label{assumptions}
+\paragraph{} All work included within this SOW shall be executed by The ETFP Fellow, or by
+volunteer developers who are external to The Tor Project and whose
+contributions are subject to the review, approval, and supervision of The
+Fellow. The Fellow shall not subcontract any of the Deliverables detailed
+herein to any other party without the explicit written permission of OTF.
+
+\subsubsection{Location of Work}
+\label{location}
+\paragraph{} The Fellow is unrestricted concerning the location of work, provided that The
+Fellow is reasonably capable of efficiently and productively communicating
+with OTF and other collegues, including collegues at The Tor Project, Inc.,
+and other institutions and organisations with experts concerned with the
+surrounding subject matter.
+
+\subsubsection{Time Requirements}
+\label{time}
+\paragraph{} The Fellow shall make a time commit equivalent to that of provincial and
+lawful full-time employment in the region(s) which The Fellow inhabits or
+completes the Tasks as defined in the SOW within.
+
+\subsection{Monitoring}
+\label{monitoring}
+\paragraph{} The Fellow shall create monthly status reports, which shall be sent to both
+OTF's and The Tor Project's mailing lists. The Fellow shall, when necessary
+for either collaboration or reporting, schedule, organise, and conduct online
+meetings, in open public channels, with collegues to ensure that progress is
+made in a satisfactory and timely manner. The Fellow will request regular code
+reviews and shall carefully consider the recommendations of the reviewers.
+
+
+% \section{Section title}
+% \label{sec:1}
+% Text with citations \cite{RefB} and \cite{RefJ}.
+% \subsection{Subsection title}
+% \label{sec:2}
+% as required. Don't forget to give each section
+% and subsection a unique label (see Sect.~\ref{sec:1}).
+% \paragraph{Paragraph headings} Use paragraph headings as needed.
+% \begin{equation}
+% a^2+b^2=c^2
+% \end{equation}
+% 
+% % For one-column wide figures use
+% \begin{figure}
+% % Use the relevant command to insert your figure file.
+% % For example, with the graphicx package use
+%   \includegraphics{example.eps}
+% % figure caption is below the figure
+% \caption{Please write your figure caption here}
+% \label{fig:1}       % Give a unique label
+% \end{figure}
+% %
+% % For two-column wide figures use
+% \begin{figure*}
+% % Use the relevant command to insert your figure file.
+% % For example, with the graphicx package use
+%   \includegraphics[width=0.75\textwidth]{example.eps}
+% % figure caption is below the figure
+% \caption{Please write your figure caption here}
+% \label{fig:2}       % Give a unique label
+% \end{figure*}
+% %
+% % For tables use
+% \begin{table}
+% % table caption is above the table
+% \caption{Please write your table caption here}
+% \label{tab:1}       % Give a unique label
+% % For LaTeX tables use
+% \begin{tabular}{lll}
+% \hline\noalign{\smallskip}
+% first & second & third  \\
+% \noalign{\smallskip}\hline\noalign{\smallskip}
+% number & number & number \\
+% number & number & number \\
+% \noalign{\smallskip}\hline
+% \end{tabular}
+% \end{table}
+
+%\begin{acknowledgements}
+%If you'd like to thank anyone, place your comments here
+%and remove the percent signs.
+%\end{acknowledgements}
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+%\bibliography{}   % name your BibTeX data base
+
+\section{References}
+\label{references}
+
+\begin{thebibliography}{}
+
+\bibitem{Ref1}
+\url{https://metrics.torproject.org/networksize.html?graph=networksize\&start=2008-10-06\&end=}
+\bibitem{Ref2}
+\url{https://metrics.torproject.org/users.html?graph=userstats-bridge-country&start=2013-01-01\&end=\&country=all#userstats-bridge-country}
+\bibitem{Ref3}
+\url{https://metrics.torproject.org/userstats-bridge-transport.html?graph=userstats-bridge-transport\&start=2014-10-06\&end=\&transport=\%3COR\%3E&transport=obfs2&transport=obfs3&transport=obfs4&transport=fte&transport=meek}
+\bibitem{Ref4}
+\href{https://bridges.torproject.org}{BridgeDB}
+\bibitem{Ref5}
+\href{https://bugs.torproject.org/9380}{Trac Ticket \#9380}
+\bibitem{Ref6}
+\href{https://bugs.torproject.org/12872}{Trac Ticket \#12872}
+\bibitem{Ref7}
+\href{https://bugs.torproject.org/11216}{Trac Ticket \#11216}
+\bibitem{Ref8}
+\href{https://bugs.torproject.org/12505}{Trac Ticket \#12505}
+\bibitem{Ref9}
+\href{https://bugs.torproject.org/12031}{Trac Ticket \#12031}
+\bibitem{Ref10}
+\href{https://bugs.torproject.org/12030}{Trac Ticket \#12030}
+\bibitem{Ref11}
+\href{https://bugs.torproject.org/12506}{Trac Ticket \#12506}
+\bibitem{Ref12}
+\href{https://bugs.torproject.org/12029}{Trac Ticket \#12029}
+\bibitem{Ref13}
+\href{https://bugs.torproject.org/10831}{Trac Ticket \#10831}
+\bibitem{Ref14}
+\href{https://bugs.torproject.org/7520}{Trac Ticket \#7520}
+\bibitem{Ref15}
+\href{https://bugs.torproject.org/12807}{Trac Ticket \#12807}
+
+\bibitem{ExhibitA}
+\href{https://people.torproject.org/~isis/docs/otf-etfp-application.txt}{Original OTF ETFP Application for the Tor Bridge Distribution project}
+\bibitem{ExhibitX}
+\href{https://gitweb.torproject.org/torspec.git/tree/proposals/226-bridgedb-database-improvements.tx}{Tor Project Proposal \#226: BridgeDB Database Improvements}
+\bibitem{ExhibitY}
+\href{https://people.torproject.org/~isis/bridgedb-interface-design.jpg}{BridgeDB and Tor Browser Systems Interaction Diagram}
+\bibitem{ExhibitZ}
+Wang, Q., Lin, Z., Borisov, N., \& Hopper, N. (2013). rBridge: User Reputation based Tor Bridge Distribution with Privacy Preservation. In NDSS. \href{https://people.torproject.org/~isis/papers/rBridge:\%20User\%20Reputation\%20based\%20Tor\%20Bridge\%20Distribution\%20with\%20Privacy\%20Preservation.copy\%20with\%20notes.pdf}{PDF}
+
+\end{thebibliography}
+
+\section{Notes}
+\label{notes}
+Areas of clarification, amplification, other information shall be placed here.
+
+\end{document}
