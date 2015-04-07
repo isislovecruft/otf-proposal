@@ -51,6 +51,8 @@
 
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+
 %\newcommand{\subparagraph}{}
 %\usepackage{titlesec}
 %
