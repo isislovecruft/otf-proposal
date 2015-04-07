@@ -59,6 +59,9 @@
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
 
 % please place your own definitions here and don't use \def but
 % \newcommand{}{}
