@@ -47,12 +47,6 @@
 % \smartqed  % flush right qed marks, e.g. at end of proof
 %
 
-\journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
-
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage[utf8]{inputenc}
-
 %\newcommand{\subparagraph}{}
 %\usepackage{titlesec}
 %
@@ -61,13 +55,16 @@
 % insert here the call for the packages your document requires
 %\usepackage{latexsym}
 % etc.
-%
+
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+
 % please place your own definitions here and don't use \def but
 % \newcommand{}{}
 %
-% Insert the name of "your journal" with
-% \journalname{myjournal}
-%
+\journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
+
 \begin{document}
 
 \title{Tor Bridge Distribution%\thanks{Grants or other notes
