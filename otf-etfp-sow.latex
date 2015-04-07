@@ -63,6 +63,8 @@
 % please place your own definitions here and don't use \def but
 % \newcommand{}{}
 %
+\frenchspacing              % Better looking spacings after periods
+
 \journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
 
 \begin{document}
