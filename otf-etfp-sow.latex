@@ -103,7 +103,7 @@
 \section{Tor Bridge Distribution}
 \label{intro}
 
-\paragraph{} Tor Bridge Distribution includes the maintenance of critical infrastructural
+\paragraph{}Tor Bridge Distribution includes the maintenance of critical infrastructural
 systems such as BridgeDB, while also working to improve the robustness,
 scalability, and maintainability of those systems. It also includes the
 development of more secure and user-friendly mechanisms for bridge
@@ -116,7 +116,7 @@ in the area of censorship circumvention would be unusable.
 \paragraph{} For additional background information, please see the additional Reference
 materials, Exhibit A. \cite{ExhibitA}
 
-\paragraph{} BridgeDB has been a free and publicly available service since 2006. Since its
+\paragraph{}BridgeDB has been a free and publicly available service since 2006. Since its
 inception, BridgeDB has consistently held a number of bridges between half and
 two-thirds the number of total relays in the Tor network, with its databases
 currently holding over 4,000 bridges relays \cite{Ref1} and over 12,000
@@ -125,7 +125,7 @@ regions. There are approximately 12,000 to 15,000 Tor bridge users per day,
 using bridges which BridgeDB has distributed. (Please see additional Reference
 materials \cite{Ref2} and \cite{Ref3}.)
 
-\paragraph{} BridgeDB's website (see additional Reference material \cite{Ref4}) sees 4.5 million
+\paragraph{}BridgeDB's website (see additional Reference material \cite{Ref4}) sees 4.5 million
 initial page hits per day, and hands out Tor bridges over HTTPS to users
 roughly 75,000 times per day. BridgeDB's email autoresponder receives 525,000
 emails per day, replies to users with help and configuration assistance
@@ -136,7 +136,7 @@ per day. All of BridgeDB's user interfaces are translated and localised into
 \subsection{Background Information for Primary Developer}
 \label{cv}
 
-\paragraph{} The technical lead for this project will be Isis Lovecruft. Isis has been
+\paragraph{}The technical lead for this project will be Isis Lovecruft. Isis has been
 a developer for The Tor Project for the past five years. The first two years were spent
 working on the Open Observatory of Network Interference (OONI), a platform
 for a global censorship detection system, as well as tools for the OONI platform which
@@ -152,7 +152,7 @@ Whispersystems, Briar Project, Tahoe-LAFS, and others.
 \subsection{Terminology}
 \label{terminology}
 
-\paragraph{} Throughout this and the following sections, the grant applicant for the Open
+\paragraph{}Throughout this and the following sections, the grant applicant for the Open
 Technology Fund's (OTF) Emerging Technologies Fellowship Program (ETFP) shall
 be referred to as "The ETFP Fellow" or, simply, "The Fellow". The recipient of
 the goods and/or services provided by The ETFP Fellow will simply be referred
@@ -161,7 +161,7 @@ to as "OTF".
 \section{Scope of Work}
 \label{scope}
 
-\paragraph{} The Fellowship's Scope of Work shall consists of a full-time effort to:
+\paragraph{}The Fellowship's Scope of Work shall consists of a full-time effort to:
 \begin{itemize}
 \item Maintain BridgeDB and other Tor Bridge Distribution infrastructure,
 \item Mitigate any reported or discovered vulnerabilities within the components of said infrastructure,
@@ -172,11 +172,11 @@ to as "OTF".
 \subsection{Objectives}
 \label{objectives}
 
-\paragraph{} The Fellow shall strive to ensure that all code and operational procedures are
+\paragraph{}The Fellow shall strive to ensure that all code and operational procedures are
 developed with the end-user's security, privacy, and usability prioritised
 above all other improvements.
 
-\paragraph{} Additionally, The Fellow shall, at all times, strive to make BridgeDB and
+\paragraph{}Additionally, The Fellow shall, at all times, strive to make BridgeDB and
 other codebases concerning Tor Bridge Distribution as maintainable,
 comprehensible, and easily extensible as possible.
 
@@ -186,7 +186,7 @@ comprehensible, and easily extensible as possible.
 \subsection{Tasks and Deliverables}
 \label{tasks}
 
-\paragraph{} With respect to the maintenance and improvement of Tor Bridge Distribution,
+\paragraph{}With respect to the maintenance and improvement of Tor Bridge Distribution,
 The ETFP Fellow shall undertake the following Tasks within the duration of the
 Fellowship:
 
@@ -386,7 +386,7 @@ the approval of all parties.
 
 \subsubsection{Payment}
 \label{payment}
-\paragraph{} Provided that the Tasks and Deliverables defined in this SOW meet the
+\paragraph{}Provided that the Tasks and Deliverables defined in this SOW meet the
 Acceptance Criteria defined in §\ref{acceptance}, and The Fellow continually meets the
 provisions for Monitoring defined in §\ref{monitoring}, OTF will provide The Fellow with a
 monthly stipend of \$4,200 USD, for a period up to twelve (12) months, for a
@@ -394,7 +394,7 @@ total sum of no more than \$50,400 USD.
 
 \subsection{Schedule}
 \label{schedule}
-\paragraph{} The ETFP Fellowship is defined to endure for a duration of one (1) year. The
+\paragraph{}The ETFP Fellowship is defined to endure for a duration of one (1) year. The
 end of The ETFP Fellowship is to be interpreted relative to the start of the
 ETFP Fellowship, where the start of The ETFP Fellowship is defined as the date
 when both parties (i.e. OTF and The Fellow) have established a Contract and
@@ -407,7 +407,7 @@ throughout the duration of The ETFP Fellowship.
 
 \subsection{Assumptions}
 \label{assumptions}
-\paragraph{} All work included within this SOW shall be executed by The ETFP Fellow, or by
+\paragraph{}All work included within this SOW shall be executed by The ETFP Fellow, or by
 volunteer developers who are external to The Tor Project and whose
 contributions are subject to the review, approval, and supervision of The
 Fellow. The Fellow shall not subcontract any of the Deliverables detailed
@@ -423,13 +423,13 @@ surrounding subject matter.
 
 \subsubsection{Time Requirements}
 \label{time}
-\paragraph{} The Fellow shall make a time commit equivalent to that of provincial and
+\paragraph{}The Fellow shall make a time commit equivalent to that of provincial and
 lawful full-time employment in the region(s) which The Fellow inhabits or
 completes the Tasks as defined in the SOW within.
 
 \subsection{Monitoring}
 \label{monitoring}
-\paragraph{} The Fellow shall create monthly status reports, which shall be sent to both
+\paragraph{}The Fellow shall create monthly status reports, which shall be sent to both
 OTF's and The Tor Project's mailing lists. The Fellow shall, when necessary
 for either collaboration or reporting, schedule, organise, and conduct online
 meetings, in open public channels, with colleagues to ensure that progress is
