@@ -38,23 +38,12 @@
 % \end{filecontents*}
 
 \RequirePackage{fix-cm}
-%
-%\documentclass{svjour3}                     % onecolumn (standard format)
-%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
-\documentclass[smallextended]{svjour3}       % onecolumn (second format)
-%\documentclass[twocolumn]{svjour3}          % twocolumn
-%
-% \smartqed  % flush right qed marks, e.g. at end of proof
-%
 
-%\newcommand{\subparagraph}{}
-%\usepackage{titlesec}
-%
-% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
-%
-% insert here the call for the packages your document requires
-%\usepackage{latexsym}
-% etc.
+%\documentclass{svjour3}                     % onecolumn (standard format)
+\documentclass[smallcondensed]{svjour3}      % onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}      % onecolumn (second format)
+%\documentclass[final]{svjour3}              % disallow any hbox overflows
+%\documentclass[twocolumn]{svjour3}          % twocolumn
 
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
@@ -63,10 +52,13 @@
 \usepackage [autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 
-% please place your own definitions here and don't use \def but
-% \newcommand{}{}
-%
-\frenchspacing              % Better looking spacings after periods
+
+% Force the \thebibliography section name to be §4 References
+%\usepackage{etoolbox}
+%\patchcmd{\begin}{
+%  \section*{\refname}}{
+%  \section{\refname}\label{references}}
+%         {}{}
 
 \journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
 
