@@ -558,10 +558,12 @@ shall be submitted to OTF's mailing lists, and any other appropriate channels.
 % \end{tabular}
 % \end{table}
 
-%\begin{acknowledgements}
-%If you'd like to thank anyone, place your comments here
-%and remove the percent signs.
-%\end{acknowledgements}
+\begin{acknowledgements}
+  to Nick Mathewson, Roger Dingledine, Nima Fatemi, Karen Reilly, and
+  other colleagues at The Tor Project for advice and encouragement, as well as
+  to Dan Blah, Denna Millet, OTF, and OTF's technical reviewers and compliance
+  committee for their time and consideration.
+\end{acknowledgements}
 
 % BibTeX users please use one of
 %\bibliographystyle{spbasic}      % basic style, author-year citations
