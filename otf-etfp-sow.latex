@@ -51,6 +51,7 @@
 \usepackage[english]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{setspace}
+\usepackage{multicol}
 \usepackage{framed}
 %\usepackage[letterpaper]{geometry}
 %\usepackage{showframe}
@@ -97,18 +98,35 @@
 %placed here. General acknowledgments should be placed at the end of the article.}
 }
 \subtitle{Statement of Work}
-%\titlerunning{Short form of title}        % if too long for running head
+%\titlerunning{Short form of title}
 
-\author{Isis Lovecruft}
-%\authorrunning{Short form of author list} % if too long for running head
-
-\institute{Isis Lovecruft \\
-              Lead Developer \at
-              The Tor Project, Inc. \\
-              \email{isis@torproject.org}
-%           \and
-%           S. Author \at
-%             second address
+\author{I.~A.~Lovecruft and N.~Mathewson}
+\authorrunning{I. Lovecruft \and N. Mathewson}
+\institute{
+  \begin{minipage}[t][20pt][l]{0.9\textwidth}
+    \begin{multicols}{3}
+      \textbf{Applicant}                      \\
+        Isis~Agora~Lovecruft                  \\
+        \emph{Lead Developer} \at
+        The Tor Project, Inc.                 \\
+        \email{isis@torproject.org}
+    \columnbreak
+  \and
+      \textbf{Mentor}                         \\
+        Nick~Mathewson                        \\
+        \emph{Chief Architect} \at
+        The Tor Project, Inc.                 \\
+        \fussy{\email{nickm@torproject.org}}
+    \columnbreak
+  \and
+      \textbf{Host Organization}              \\
+        The Tor Project, Inc.                 \\
+        \emph{§501(c)(3) Non-Profit}          \\
+        7 Temple Street, Suite A              \\
+        Cambridge, MA 02139
+    \columnbreak
+    \end{multicols}
+  \end{minipage}
 }
 
 \date{}
