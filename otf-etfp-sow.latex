@@ -80,8 +80,12 @@
 \cleanlookdateon               % Format dates like so: 4 January 2015
 % \smartqed                    % flush right qed marks, e.g. at end of proof
 
+\setlength{\textwidth}{\dimexpr\pdfpagewidth-7cm}
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{0.5pt}
+%\setlength\marginparwidth{50pt}
+%\setlength\oddsidemargin{-30pt}
+%\setlength\evensidemargin{-30pt}
 
 \journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
 
