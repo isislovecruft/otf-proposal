@@ -48,7 +48,12 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
-\usepackage [english]{babel}
+\usepackage[english]{babel}
+\usepackage[UKenglish]{isodate}
+\usepackage{setspace}
+\usepackage{framed}
+%\usepackage[letterpaper]{geometry}
+%\usepackage{showframe}
 \usepackage [autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 
@@ -66,6 +71,16 @@
 %  \section*{\refname}}{
 %  \section{\refname}\label{references}}
 %         {}{}
+
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\cleanlookdateon               % Format dates like so: 4 January 2015
+% \smartqed                    % flush right qed marks, e.g. at end of proof
+
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
 
 \journalname{Open Technology Fund: Emerging Technologies Fellowship Program}
 
@@ -90,10 +105,21 @@
 %             second address
 }
 
-% \date{Received: date / Accepted: date}
-% The correct dates will be entered by the editor
-
+\date{}
 \maketitle
+
+\blfootnote{\\
+  \parbox[b][5pt][l]{0.33\textwidth}{
+\begin{framed}
+    \begin{spacing}{0.9} \small \narrower
+Published: \hfill 4 January 2015 \\
+Submitted: \hfill \today         \\
+Reviewed:  \hfill                \\
+Accepted:  \hfill
+    \end{spacing}
+\end{framed}
+  }
+}
 
 %\begin{abstract}
 %Insert your abstract here. Include keywords, PACS and mathematical
