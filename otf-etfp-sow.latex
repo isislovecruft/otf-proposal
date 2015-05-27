@@ -46,12 +46,19 @@
 %\documentclass[twocolumn]{svjour3}          % twocolumn
 
 \usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage [english]{babel}
 \usepackage [autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor={red!60!black},
+    citecolor={red!60!black},
+    urlcolor={blue!40!black}
+}
 
 % Force the \thebibliography section name to be §4 References
 %\usepackage{etoolbox}
