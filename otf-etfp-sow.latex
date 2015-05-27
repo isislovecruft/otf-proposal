@@ -53,6 +53,7 @@
 \usepackage{setspace}
 \usepackage{multicol}
 \usepackage{framed}
+\usepackage{hyphenat}
 %\usepackage[letterpaper]{geometry}
 %\usepackage{showframe}
 \usepackage [autostyle, english = american]{csquotes}
@@ -79,6 +80,8 @@
 
 \nonfrenchspacing              % Better looking spacings after periods
 \cleanlookdateon               % Format dates like so: 4 January 2015
+\hyphenpenalty=7000            % Try to use less hyphens
+\tolerance=200
 % \smartqed                    % flush right qed marks, e.g. at end of proof
 
 \setlength{\textwidth}{\dimexpr\pdfpagewidth-7cm}
@@ -159,7 +162,7 @@ Accepted:  \hfill
 Tor Bridge Distribution includes the maintenance of critical infrastructural
 systems such as BridgeDB, while also working to improve the robustness,
 scalability, and maintainability of those systems. It also includes the
-development of more secure and user-friendly mechanisms for bridge
+development of more secure and user\hyp{}friendly mechanisms for Bridge
 distribution. Without this essential work, much of the Tor Projects' efforts
 in the area of censorship circumvention would be unusable.
 
@@ -217,16 +220,19 @@ to as "OTF".
 The Scope of Work for the Fellowship shall consist of a full\hyp{}time effort to:
 \begin{itemize}
 \item Maintain BridgeDB and other Tor Bridge Distribution infrastructure,
-\item Mitigate any reported or discovered vulnerabilities within the components of said infrastructure,
-\item Develop improved solutions for distributing Tor Bridges to end-user clients, and
-\item Improve the reliability, scalability, and future maintainability of the underlying systems and their codebases.
+\item Mitigate any reported or discovered vulnerabilities within the
+  components of said infrastructure,
+\item Develop improved solutions for distributing Tor Bridges to end\hyp{}user
+  clients, and,
+\item Improve the reliability, scalability, and future maintainability of the
+  underlying systems and their codebases.
 \end{itemize}
 
 \subsection{Objectives}
 \label{objectives}
 
 The Fellow shall strive to ensure that all code and operational procedures are
-developed with the end-user's security, privacy, and usability prioritised
+developed with the end\hyp{}user's security, privacy, and usability prioritised
 above all other improvements.
 
 Additionally, The Fellow shall, at all times, strive to make BridgeDB and
@@ -255,7 +261,7 @@ Fellowship:
         
 \paragraph{\textbf{SOW.2.}}
         The Fellow shall refactor legacy sections of BridgeDB's codebase to
-        utilise a new Tor parser library. This library is commonly-maintained
+        utilise a new Tor parser library. This library is commonly\hyp{}maintained
         by several developers and volunteers at The Tor Project, thus, this
         initial refactoring will result in a great reduction in future efforts
         spent maintaining the BridgeDB's codebase, as well as additional speed
@@ -269,9 +275,9 @@ Fellowship:
 
         \leftskip=20pt
         \paragraph{\textbf{SOW.3.1.}}
-                  Migration of BridgeDB's databases to a distributed,
-                  asynchronous database system and add support for using a
-                  caching key-value store (see additional Reference materials,
+                  Migration of BridgeDB's databases to a distrib\-uted,
+                  a\-synchron\-ous data\-base system and add support for using a
+                  caching key\hyp{}value store. (see additional Reference materials,
                   Exhibit X, for further details regarding proposed
                   implementation, and see also \cite{Ref9} \cite{Ref10}
                   \cite{Ref11}), and,
@@ -371,10 +377,10 @@ Fellowship:
          
 \paragraph{} 
          This research will stand as the basis for later implementation of an
-         automated, privacy-preserving, Tor Bridge Distributor that uses
+         automated, privacy\hyp{}preserving, Tor Bridge Distributor that uses
          measurements of a user's "good behaviour" (i.e. the user's bridges
          have not been blocked by a censoring party), as well as invite
-         tokens, to create a highly censorship-resistant Tor Bridge
+         tokens, to create a highly censorship\hyp{}resistant Tor Bridge
          distribution mechanism, wherein censoring parties and their sibyls
          are "locked out" of the system and unable to obtain bridges. The
          results of this research shall be publicly documented as an
@@ -383,7 +389,7 @@ Fellowship:
          \leftskip=20pt
          \paragraph{\textbf{SOW.10.1.}}
                    The Fellow shall investigate the current implementation
-                   feasibility, and server-side efficiency, of the underlying
+                   feasibility, and server\hyp{}side efficiency, of the underlying
                    cryptographic primitives required by the design of the
                    "Social Distributor" contained within the rBridge paper,
                    including, but not limited to, anonymous credentials and
@@ -397,10 +403,10 @@ Fellowship:
                                these requisite cryptographic primitives.
                                
                    \paragraph{\textbf{SOW.10.1.2.}}
-                               The Fellow shall consult with cryptologic
-                               experts concerning the safest implementation
-                               strategy for these primitives, should no
-                               acceptable implementations already exist.
+                             The Fellow shall consult with cryptologic
+                             experts concerning the safest implement\-ation
+                             strategy for these primitives, should no
+                             acceptable implementations already exist.
                                
                    \paragraph{\textbf{SOW.10.1.3.}}
                                The Fellow shall consult with cryptologic
@@ -413,7 +419,7 @@ Fellowship:
          \leftskip=20pt
          \paragraph{\textbf{SOW.10.2.}}
                    The Fellow shall investigate the feasibility of
-                   implementing the client-side portion of the codebase for
+                   implementing the client\hyp{}side portion of the codebase for
                    the "Social Distributor" on top of the TBB Firefox
                    extension defined in SOW.9.1.
                    
