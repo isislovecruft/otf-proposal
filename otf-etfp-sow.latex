@@ -76,6 +76,7 @@
 \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
 \makeatother
 
+\nonfrenchspacing              % Better looking spacings after periods
 \cleanlookdateon               % Format dates like so: 4 January 2015
 % \smartqed                    % flush right qed marks, e.g. at end of proof
 
