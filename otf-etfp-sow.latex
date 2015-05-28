@@ -527,14 +527,6 @@ comprised mostly of research --- namely, portions of \hyperref[sec:SOW8]{SOW.8},
 \hyperref[sec:SOW9]{SOW.9}, and \hyperref[sec:SOW10]{SOW.10} --- may be completed
 by The Fellow at any time throughout the duration of The ETFP Fellowship.
 
-\subsection{Assumptions}
-\label{assumptions}
-\paragraph{}All work included within this SOW shall be executed by The ETFP Fellow, or by
-volunteer developers who are external to The Tor Project and whose
-contributions are subject to the review, approval, and supervision of The
-Fellow. The Fellow shall not subcontract any of the Deliverables detailed
-herein to any other party without the explicit written permission of OTF.
-
 \subsubsection{Location of Work}
 \label{location}
 The Fellow is unrestricted concerning the location of work, provided that The
@@ -542,12 +534,6 @@ Fellow is reasonably capable of efficiently and productively communicating
 with OTF and other colleagues, including colleagues at The Tor Project, Inc.,
 and other institutions and organizations with experts concerned with the
 surrounding subject matter.
-
-\subsubsection{Time Requirements}
-\label{time}
-\paragraph{}The Fellow shall make a time commit equivalent to that of provincial and
-lawful full-time employment in the region(s) which The Fellow inhabits or
-completes the Tasks as defined in the SOW within.
 
 \subsection{Monitoring}
 \label{monitoring}
