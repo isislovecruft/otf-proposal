@@ -52,6 +52,9 @@
 \usepackage[UKenglish]{isodate}
 \usepackage{setspace}
 \usepackage{multicol}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{wrapfig}
 \usepackage{framed}
 \usepackage{hyphenat}
 %\usepackage[letterpaper]{geometry}
@@ -166,25 +169,62 @@ in the area of censorship circumvention would be unusable.
 \subsection{Background}
 \label{background}
 
-For additional background information, please see the additional Reference
-materials, Exhibit A. \cite{ExhibitA}
+% \begin{wrapfigure}{r}{0.65\textwidth}
+%   \vspace{-25pt}
+%   \begin{center}
+%   \includegraphics[trim=15 35 15 45,
+%                    width=0.65\textwidth,
+%                    keepaspectratio=true,
+%                    clip=true]{networksize}
+%   \end{center}
+%   \vspace{-15pt}
+%   \caption{Number of Relays and Bridges \cite{Ref1}}
+%   \label{fig:networksize}
+%   \vspace{-50pt}
+% \end{wrapfigure}
 
-BridgeDB has been a free and publicly available service since 2006. Since its
-inception, BridgeDB has consistently held a number of bridges between half and
-two-thirds the number of total relays in the Tor network, with its databases
-currently holding over 4,000 bridges relays \cite{Ref1} and over 12,000
-Pluggable-Transport bridges for distribution to users in censored
-regions. There are approximately 12,000 to 15,000 Tor bridge users per day,
-using bridges which BridgeDB has distributed. (Please see additional Reference
-materials \cite{Ref2} and \cite{Ref3}.)
+\begin{wrapfigure}{r}{0.62\textwidth}
+  \vspace{-65pt}
+  \centering
+  \includegraphics[trim=20 35 20 40,
+                   width=0.62\textwidth,
+                   keepaspectratio=true,
+                   clip=true]{userstats-bridge-country}
+  \vspace{-15pt}
+  \caption{Daily bridge users \cite{Ref2}}
+  \label{fig:userstats-bridge-country}
+  \vspace{-15pt}
+\end{wrapfigure}
 
-BridgeDB's website (see additional Reference material \cite{Ref4}) sees 4.5 million
-initial page hits per day, and hands out Tor bridges over HTTPS to users
-roughly 75,000 times per day. BridgeDB's email autoresponder receives 525,000
-emails per day, replies to users with help and configuration assistance
-350,000 times per day, and emails Tor bridges to users roughly 50,000 times
-per day. All of BridgeDB's user interfaces are translated and localised into
-45 different languages and dialects.
+Since its inception in 2006, BridgeDB has been a free, publicly-available
+service.  During that time, it has consistently held a number of Bridges
+between half and two\hyp{}thirds the number of total relays in the Tor
+network, \cite{Ref1} with its databases currently holding approximately 4,000
+Bridge relays and over 12,000 Pluggable\hyp{}Transport Bridges for
+distribution to users in censored regions.
+%(\textbf{fig.~\ref{fig:networksize}}). %on page~\pageref{fig:networksize}).
+There are approximately 20,000 Tor Bridge users per day, using Bridges which
+BridgeDB has distributed (\textbf{Fig.~\ref{fig:userstats-bridge-country}} \&
+\textbf{Fig.~\ref{fig:userstats-bridge-transport}}).
+
+\begin{figure}[t]
+  \includegraphics[trim=20 35 20 40,
+                   width=\textwidth,
+                   keepaspectratio=true,
+                   clip=true]{userstats-bridge-transport}
+  \caption{Bridge users by Pluggable Transport \cite{Ref3}}
+  \label{fig:userstats-bridge-transport}
+\end{figure}
+
+BridgeDB's website \cite{Ref4} sees 6~million initial page hits per day, and
+distributes Tor Bridges to users roughly 100,000 times per day over
+HTTPS. BridgeDB's email autoresponder receives 650,000 emails per day, replies
+to users with help and configuration assistance 400,000 times per day, and
+emails Tor Bridges to users roughly 60,000 times per day. All of BridgeDB's
+user interfaces are translated and localized into 54 different languages and
+dialects.
+
+For additional background information, please see \cite{originalapplication}.
 
 \subsection{Background Information for Primary Developer}
 \label{sec:cv}
