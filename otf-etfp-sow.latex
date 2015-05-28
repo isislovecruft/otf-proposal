@@ -404,9 +404,9 @@ Fellowship:
         \paragraph{\textbf{SOW.9.1.}}
         \label{sec:SOW9.1}
                 The Fellow shall research the feasibility and implementation
-                difficultly of creating a new TBB Firefox extension to
-                automatically distribute bridges to clients who have few
-                remaining reachable or functional bridges remaining in their
+                difficultly of creating a new Tor Browser Firefox extension to
+                automatically distribute Bridges to clients who have few
+                remaining reachable or functional Bridges remaining in their
                 Tor configuration file.
         
                 \leftskip=40pt
@@ -480,9 +480,9 @@ Fellowship:
                    \leftskip=40pt
                    \paragraph{\textbf{SOW.10.2.1.}}
                    \label{sec:SOW10.2.1}
-                               The Fellow shall consult with the TBB
-                               development team to arrive at a design that is
-                               satisfactory to the TBB development team.
+                             The Fellow shall consult with the Tor Browser
+                             development team to arrive at a design that is
+                             satisfactory to the Tor Browser development team.
 \leftskip=0pt
 
 \subsubsection{Acceptance Criteria}
