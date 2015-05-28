@@ -487,25 +487,17 @@ Fellowship:
 
 \subsubsection{Acceptance Criteria}
 \label{acceptance}
-
-Due to The Fellow being the Team Lead for the Tor Bridge
-component of the software and hardware Tor ecosystem, as well as the Lead
-Developer and Lead Maintainer of BridgeDB, the satisfactory acceptance of the
-efforts and work concerning the above Deliverables, and the determination of
-their completion status, shall, to some extent, be under the review and
-recommendation of The Fellow. However, The Fellow shall routinely consult with
-other Team Leads within The Tor Project, Inc., as well as with any Technical
-Reviewers, etc., at OTF, to assess that the Deliverable are satisfied in a
-manner which meets the approval of all parties.
-
-Whenever The Fellow or any other core member of the Tor Project
-should decide that some submitted code is in need of code review, final
-acceptance shall pend satisfactory results from a code review conducted by
-another core member of the Tor Project.  That is, if code review is requested,
-the Fellow is \emph{not} permitted to review code they wrote themself.  In
-some cases, code review may be either irrelevant or insignificant, for
-example if the proposed changes are minor or simple, and in these cases
-"code review" shall consist of a public discussion resulting in an
+The Fellow shall routinely consult with other Team Leads within The Tor
+Project, Inc., as well as with any Technical Reviewers, etc., at OTF, to
+assess that the Deliverable are satisfied in a manner which meets the approval
+of all parties.  Whenever The Fellow or any other core member of the Tor
+Project should decide that some submitted code is in need of code review,
+final acceptance shall pend satisfactory results from a code review conducted
+by another core member of the Tor Project.  More explicitly, if code review is
+requested, the Fellow is \emph{not} permitted to review code which they wrote
+themself.  In some cases, code review may be either irrelevant or
+insignificant, for example if the proposed changes are minor or simple, and in
+these cases "code review" shall consist of a public discussion resulting in an
 agreement on the proposed changes.  Any and all code reviews and code
 discussions shall take place via public communications channels, such that any
 member of the broader community may observe and/or contribute input.
